@@ -90,7 +90,7 @@ def user(nickname):
     user = User.query.filter_by(nickname = nickname).first()
 
     if user == None:
-        flash('User ' + nickname + ' not found.')
+        flash('Hey, the person named ' + nickname + ' could not found.')
         return redirect(url_for('index'))
 
     posts = [
