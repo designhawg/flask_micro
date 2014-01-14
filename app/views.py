@@ -92,16 +92,11 @@ def after_login(resp):
         user = User(nickname = nickname, email = resp.email, role = ROLE_USER)
         db.session.add(user)
         db.session.commit()
-<<<<<<< HEAD
-        # make the user follow him/herself
-        db.session.add(user.follow(user))
-        db.session.commit()
-=======
+
         #make the user follow him/herself
         db.session.add(user.follow(user))
         db.session.commit()
 
->>>>>>> d7068a9d0100ebde50d45b8ea5685b942683ea97
     remember_me = False
     if 'remember_me' in session:
         remember_me = session['remember_me']
