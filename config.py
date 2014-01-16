@@ -19,3 +19,6 @@ MAIL_USERNAME = None
 MAIL_PASSWORD = None
 
 ADMINS = ['designhawg@gmail.com']
+
+# pagination
+POSTS_PER_PAGE = 3
