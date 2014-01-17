@@ -22,3 +22,6 @@ ADMINS = ['designhawg@gmail.com']
 
 # pagination
 POSTS_PER_PAGE = 3
+
+#search
+WHOOSH_BASE = os.path.join(basedir, 'search.db')
