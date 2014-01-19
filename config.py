@@ -13,10 +13,13 @@ OPENID_PROVIDERS = [
         {'name': 'Flickr', 'url': 'http://www.flickr.com/<username>'},
         {'name': 'MyOpenID', 'url': 'https://www.myopenid.com' }]
 
-MAIL_SERVER = 'localhost'
-MAIL_PORT = 25
-MAIL_USERNAME = None
-MAIL_PASSWORD = None
+#email server
+MAIL_SERVER = 'smtp.googlemail.com'
+MAIL_PORT = 465
+MAIL_USE_TLS = False
+MAIL_USE_SSL = True
+MAIL_USERNAME = 'designhawg'
+MAIL_PASSWORD = 'python2012'
 
 ADMINS = ['designhawg@gmail.com']
 
