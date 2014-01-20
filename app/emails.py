@@ -16,4 +16,4 @@ def follower_notification(followed, follower):
 	render_template("follower_email.txt",
 		user = followed, follower = follower),
 	render_template("follower_email.html",
-		user = followed, follower = follower))
+		user = followed, follower = follower)
