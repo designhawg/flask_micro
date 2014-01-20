@@ -1,13 +1,19 @@
 from flask.ext.mail import Message
 from flask import render_template
 from app import mail
+from threading import Thread
 from config import ADMINS
+from decorators import async
+
+@async
+def send_async_email(msg):
+	mail.send(msg)
 
 def send_email(subject, sender, recipients, text_body, html_body):
 	msg = Message(subject, sender = sender, recipients = recipients)
 	msg.body = text_body
 	msg.html = html_body
-	mail.send(msg)
+	send_async_email(msg)
 
 def follower_notification(followed, follower):
 	send_email("[microblog] %s is now following you!") % follower.nickname,
