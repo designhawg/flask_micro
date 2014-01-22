@@ -3,26 +3,28 @@
 {% block content %}
 
 	<h3>Hello, {{ g.user.nickname }}!</h3>
-	<form action="" method="post" name="post">
-		{{ form.hidden_tag() }}
-		<table>
-			<tr>
-				<td>Say something!</td>
-				<td>{{ form.post(size=30, maxlength = 140) }}</td>
-				<td>
+
+	{% include 'flash.html' %}
+	<div class="well">
+		<form class="form-horizontal" action="" method="post" name="post">
+			{{ form.hidden_tag() }}
+			<div class="control-group{% if form.errors.post %} error{% endif %}">
+				<label class="control-label" for="post">Say something:</label>
+				<div class="controls">
+					{{ form.post(size = 30, maxlength = 140) }}
 					{% for error in form.errors.post %}
-						<span style="color: red;">[{{ error }}]</span>
-						<br>
+					<span class="help-inline">[{{error}}]</span><br>
 					{% endfor %}
-				</td>
-			</tr>
-			<tr>
-				<td></td>
-				<td><input type="submit" value="Post!"></td>
-				<td></td>
-			</tr>
-		</table>
-	</form>
+				</div>
+			</div>
+			<div class="control-group">
+				<div class="controls">
+					<input class="btn btn-primary" type="submit" value="Post!">
+				</div>
+			</div>
+		</form>
+	</div>
+
 	<!-- posts is a paginated object -->
 	{% for post in posts.items %}
 		{% include 'post.html' %}
