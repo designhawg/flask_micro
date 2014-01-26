@@ -1,5 +1,9 @@
 *.py[cod]
 
+app.db
+search.db
+flask
+
 # C extensions
 *.so
 

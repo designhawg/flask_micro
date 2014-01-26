@@ -2,6 +2,7 @@ from flask.ext.wtf import Form
 from wtforms import TextField, BooleanField, TextAreaField
 from wtforms.validators import Required, Length
 from app.models import User
+from flask.ext.babel import gettext
 
 class LoginForm(Form):
 	openid = TextField('openid', validators = [Required()])
@@ -13,17 +14,23 @@ class EditForm(Form):
     def __init__(self, original_nickname, *args, **kwargs):
         Form.__init__(self, *args, **kwargs)
         self.original_nickname = original_nickname
+
     def validate(self):
         if not Form.validate(self):
             return False
+
         if self.nickname.data == self.original_nickname:
             return True
+
         if self.nickname.data != User.make_valid_nickname(self.nickname.data):
             self.nickname.errors.append(gettext('This nickname has invalid characters. Please use only letters, numbers, dots and underscores. Thank you.'))
+            return False
+
         user = User.query.filter_by(nickname = self.nickname.data).first()
         if user != None:
-            self.nickname.errors.append('This nickname is already in use. Please choose another one, asshat.')
+            self.nickname.errors.append(gettext('This nickname is already in use. Please choose another one, asshat.'))
             return False
+
         return True
 
 class PostForm(Form):
