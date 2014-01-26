@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import os
 basedir = os.path.abspath(os.path.dirname(__file__))
 
@@ -8,10 +10,16 @@ CSRF_ENABLED = True
 SECRET_KEY = 'test'
 
 OPENID_PROVIDERS = [
-        {'name': 'Google', 'url': 'https://www.google.com/accounts/o8/id'},
-        {'name': 'Yahoo', 'url': 'https://me.yahoo.com'},
-        {'name': 'Flickr', 'url': 'http://www.flickr.com/<username>'},
-        {'name': 'MyOpenID', 'url': 'https://www.myopenid.com' }]
+	{'name': 'Google', 'url': 'https://www.google.com/accounts/o8/id'},
+	{'name': 'Yahoo', 'url': 'https://me.yahoo.com'},
+	{'name': 'Flickr', 'url': 'http://www.flickr.com/<username>'},
+	{'name': 'MyOpenID', 'url': 'https://www.myopenid.com' }]
+
+# available languages
+LANGUAGES = {
+	'en': 'English',
+	'es': 'Español'
+}
 
 #email server
 MAIL_SERVER = 'smtp.googlemail.com'
