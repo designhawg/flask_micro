@@ -1,15 +1,19 @@
 from flask import render_template, flash, redirect, session, url_for, request, g
 from flask.ext.login import login_user, logout_user, current_user, login_required
-from app import app, db, lm, oid
+from app import app, db, lm, oid, babel
 from forms import LoginForm, EditForm, PostForm, SearchForm
 from models import User, ROLE_USER, ROLE_ADMIN, Post
 from datetime import datetime
 from emails import follower_notification
-from config import POSTS_PER_PAGE, MAX_SEARCH_RESULTS
+from config import POSTS_PER_PAGE, MAX_SEARCH_RESULTS, LANGUAGES
 
 @lm.user_loader
 def load_user(id):
     return User.query.get(int(id))
+
+@babel.localeselector
+def get_locale():
+    return request.accept_languages.best_match(LANGUAGES.keys())
 
 @app.before_request
 def before_request():
@@ -79,7 +83,7 @@ def login():
 def after_login(resp):
 
     if resp.email is None or resp.email == "":
-        flash('Invalid login. Please try again.')
+        flash(gettext('Invalid login. Please try again.'))
         redirect(url_for('login'))
     user = User.query.filter_by(email = resp.email).first()
     if user is None:
