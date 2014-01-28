@@ -1,0 +1,209 @@
+# Translations template for PROJECT.
+# Copyright (C) 2014 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2014-01-27 23:53-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 1.3\n"
+
+#: app/forms.py:26
+msgid ""
+"This nickname has invalid characters. Please use only letters, numbers, "
+"dots and underscores. Thank you."
+msgstr ""
+
+#: app/forms.py:31
+msgid "This nickname is already in use. Please choose another one, asshat."
+msgstr ""
+
+#: app/views.py:57
+msgid "Your post is now live!"
+msgstr ""
+
+#: app/views.py:88
+msgid "Invalid login. Please try again."
+msgstr ""
+
+#: app/views.py:121
+msgid "Your changes have been saved."
+msgstr ""
+
+#: app/views.py:135
+#, python-format
+msgid "User  %(nickname)s not found."
+msgstr ""
+
+#: app/views.py:149 app/views.py:169
+#, python-format
+msgid "User %(nickname)s not found."
+msgstr ""
+
+#: app/views.py:152
+msgid "you can't follow yourself"
+msgstr ""
+
+#: app/views.py:156
+#, python-format
+msgid "Cannot follow %(nickname)s."
+msgstr ""
+
+#: app/views.py:160
+#, python-format
+msgid "you are now following %(nickname)s."
+msgstr ""
+
+#: app/views.py:172
+msgid "you can't unfollow yourself"
+msgstr ""
+
+#: app/views.py:176
+#, python-format
+msgid "Cannot unfollow %(nickname)s."
+msgstr ""
+
+#: app/views.py:180
+#, python-format
+msgid "you have unfollowed %(nickname)s."
+msgstr ""
+
+#: app/templates/500.html:5
+msgid "An unexpected error has occurred"
+msgstr ""
+
+#: app/templates/500.html:6
+msgid "The administrator has been notified. Sorry for the inconvenience!"
+msgstr ""
+
+#: app/templates/500.html:7
+msgid "Back"
+msgstr ""
+
+#: app/templates/base.html:37
+msgid "Home"
+msgstr ""
+
+#: app/templates/base.html:53
+msgid "Your profile"
+msgstr ""
+
+#: app/templates/base.html:54
+msgid "Logout"
+msgstr ""
+
+#: app/templates/edit.html:4
+msgid "Edit Your Profile"
+msgstr ""
+
+#: app/templates/edit.html:12
+msgid "Your nickname:"
+msgstr ""
+
+#: app/templates/edit.html:16 app/templates/edit.html:25
+#, python-format
+msgid "%(error)s"
+msgstr ""
+
+#: app/templates/edit.html:21
+msgid "About yourself:"
+msgstr ""
+
+#: app/templates/edit.html:31
+msgid "Save Changes"
+msgstr ""
+
+#: app/templates/follower_email.html:3
+#, python-format
+msgid "%(nickname)s is now a follower."
+msgstr ""
+
+#: app/templates/follower_email.html:15
+msgid "Regards"
+msgstr ""
+
+#: app/templates/follower_email.html:16
+msgid "The <code>microblog</code> admin"
+msgstr ""
+
+#: app/templates/index.html:5
+#, python-format
+msgid "Hello, %(nickname)s!"
+msgstr ""
+
+#: app/templates/index.html:12
+msgid "Say something:"
+msgstr ""
+
+#: app/templates/index.html:22
+msgid "Post!"
+msgstr ""
+
+#: app/templates/index.html:36 app/templates/index.html:38
+#: app/templates/user.html:37 app/templates/user.html:39
+msgid "Newer posts"
+msgstr ""
+
+#: app/templates/index.html:42 app/templates/index.html:44
+#: app/templates/user.html:43 app/templates/user.html:45
+msgid "Older posts"
+msgstr ""
+
+#: app/templates/login.html:22
+msgid "Please Sign In"
+msgstr ""
+
+#: app/templates/login.html:25
+msgid "Click on your OpenID provider below:"
+msgstr ""
+
+#: app/templates/login.html:33
+msgid "Or enter your OpenID here:"
+msgstr ""
+
+#: app/templates/login.html:44
+msgid "Remember Me"
+msgstr ""
+
+#: app/templates/login.html:50
+msgid "Sign In"
+msgstr ""
+
+#: app/templates/post.html:8
+#, python-format
+msgid "%(nickname)s said %(when)s:"
+msgstr ""
+
+#: app/templates/user.html:15
+msgid "Last seen:"
+msgstr ""
+
+#: app/templates/user.html:18
+msgid "Followers:"
+msgstr ""
+
+#: app/templates/user.html:18
+msgid "Following:"
+msgstr ""
+
+#: app/templates/user.html:20
+msgid "Edit your profile"
+msgstr ""
+
+#: app/templates/user.html:22
+msgid "Follow"
+msgstr ""
+
+#: app/templates/user.html:24
+msgid "Unfollow"
+msgstr ""
+
