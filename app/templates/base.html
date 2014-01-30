@@ -12,6 +12,8 @@
         <script src="/static/js/bootstrap.min.js"></script>
         {% if g.locale != 'en' %}
             <script src="/static/js/moment-{{g.locale}}.min.js"></script>
+        {% else %}
+            <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/lang/el.js"></script>
         {% endif %}
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
