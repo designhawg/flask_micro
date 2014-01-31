@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2014-01-27 23:53-0600\n"
-"PO-Revision-Date: 2014-01-28 22:57-0600\n"
+"PO-Revision-Date: 2014-01-30 22:50-0600\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: es <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -35,7 +35,7 @@ msgstr "Tester"
 
 #: app/views.py:88
 msgid "Invalid login. Please try again."
-msgstr "Tester"
+msgstr "Try again asshat"
 
 #: app/views.py:121
 msgid "Your changes have been saved."
@@ -183,11 +183,11 @@ msgstr "Tester"
 #: app/templates/post.html:8
 #, python-format
 msgid "%(nickname)s said %(when)s:"
-msgstr "Tester %(nickname)s Tester %(when)s"
+msgstr "Tester %(nickname)s try again %(when)s"
 
 #: app/templates/user.html:15
 msgid "Last seen:"
-msgstr "Tester"
+msgstr "Lo siento"
 
 #: app/templates/user.html:18
 msgid "Followers:"

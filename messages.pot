@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-01-27 23:53-0600\n"
+"POT-Creation-Date: 2014-01-30 22:44-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,10 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 1.3\n"
+
+#: app/__init__.py:18
+msgid "Please log in to access this page."
+msgstr ""
 
 #: app/forms.py:26
 msgid ""
@@ -89,15 +93,15 @@ msgstr ""
 msgid "Back"
 msgstr ""
 
-#: app/templates/base.html:37
+#: app/templates/base.html:35
 msgid "Home"
 msgstr ""
 
-#: app/templates/base.html:53
+#: app/templates/base.html:51
 msgid "Your profile"
 msgstr ""
 
-#: app/templates/base.html:54
+#: app/templates/base.html:52
 msgid "Logout"
 msgstr ""
 

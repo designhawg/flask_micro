@@ -27,7 +27,7 @@ MAIL_PORT = 465
 MAIL_USE_TLS = False
 MAIL_USE_SSL = True
 MAIL_USERNAME = 'designhawg'
-MAIL_PASSWORD = 'python2012'
+MAIL_PASSWORD = 'PASS_HERE'
 
 ADMINS = ['designhawg@gmail.com']
 
