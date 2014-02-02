@@ -15,7 +15,9 @@ db = SQLAlchemy(app)
 lm = LoginManager()
 lm.init_app(app)
 lm.login_view = 'login'
-lm.login_message = lazy_gettext('Please log in to access this page.')
+# lazy_gettext('Please log in to access this page') is causing a problem here...
+# pulling it out for now...
+lm.login_message = 'Please log in to access this page'
 oid = OpenID(app, os.path.join(basedir, 'tmp'))
 mail = Mail(app)
 babel = Babel(app)

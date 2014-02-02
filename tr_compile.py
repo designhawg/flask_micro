@@ -8,4 +8,4 @@ if sys.platform == 'win32':
 else:
 	pybabel = '/Users/grooves/.virtualenvs/flask_micro/bin/pybabel'
 
-os.system(py.babel + ' compile -d app/translations')
+os.system(pybabel + ' compile -d app/translations')
