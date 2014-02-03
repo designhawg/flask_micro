@@ -58,18 +58,6 @@
         <div class="container">
         <div class="row">
             <div class="span12">
-                    <!--Either remove this use of flash messages or remove the flash messages used on the individual pages-->
-                    {% with messages = get_flashed_messages() %}
-                        {% if messages %}
-                            {% for message in messages %}
-                            <div class="alert alert-info">
-                            <button type="button" class="close" data-dismiss="alert">&times;</button>
-                            {{ message }}
-                            </div>
-                            {% endfor %}
-                        {% endif %}
-                        {% endwith %}
-
                 {% block content %}{% endblock %}
             </div>
         </div>
